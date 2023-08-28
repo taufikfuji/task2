@@ -4,7 +4,7 @@ function myName() {
 }
 console.log(myName());
 
-===========Length==================== */
+/* ===========Length==================== */
 function getNameLength(name) {
     return name.length;
 }
