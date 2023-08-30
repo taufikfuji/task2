@@ -43,3 +43,5 @@ const strToLengthExpression = function(inputName) {
 
 const lengthExpression = strToLengthExpression(myName);
 console.log(lengthExpression); 
+
+
