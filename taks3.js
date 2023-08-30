@@ -1,25 +1,61 @@
-const a = 5;
-const b = 5;
+/*===================================Declaration==============================*/
+let input1 = 9
+let input2 = 10
+let operation = "+"
 
-function calculator(option, a, b) {
-  if (option == "add") {
-    return a + b;
-  } else if (option == "subtract") {
-    return a - b;
-  } else if (option == "multiply") {
-    return a * b;
-  } else if (option == "divide") {
-    return a / b;
-  } else {
-    return "error";
-  }
+function calculator(input1, input2, operation){
+    // console.log(input1,input2,operation);
+    if(typeof input1 !== "number" || typeof input2 !=="number"){
+        return "Invalid input, please input number";
+    }
+    else if(operation == "+"){
+        return input1+input2
+
+    } else if (operation == "-"){
+        return input1-input2
+        
+    }else if (operation=="*"){
+        return input1*input2
+
+    }else if (operation=="/"){
+        return input1/input2
+    }else {
+        return "error";
+    }
 }
 
-console.log("Tambah:", calculator("add", a, b));
-console.log("Kurang:", calculator("subtract", a, b));
-console.log("Kali:", calculator("multiply", a, b));
-console.log("Bagi:", calculator("divide", a, b));
+let result = calculator(input1,input2,operation)
+console.log(result);
 
+
+/*===================================Ekpresion==============================*/
+let input1 = 9
+let input2 = 10
+let operation = "+"
+
+let calculator = function (input1, input2, operation){
+    // console.log(input1,input2,operation);
+    if(typeof input1 !== "number" || typeof input2 !=="number"){
+        return "Invalid input, please input number";
+    }
+    else if(operation == "+"){
+        return input1+input2
+
+    } else if (operation == "-"){
+        return input1-input2
+        
+    }else if (operation=="*"){
+        return input1*input2
+
+    }else if (operation=="/"){
+        return input1/input2
+    }else {
+        return "error";
+    }
+}
+
+let result = calculator(input1,input2,operation)
+console.log(result);
 
 /*=============Function Declaration========*/
 let myName = "fuji taufik";
