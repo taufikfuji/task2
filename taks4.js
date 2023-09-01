@@ -1,6 +1,3 @@
-let input1 = 9
-let input2 = 10
-let operation = "+"
 
 let calculator = (input1,input2,operator)=> {
     if (typeof input1 !== "number" || typeof input2 !=="number"){
@@ -18,5 +15,5 @@ let calculator = (input1,input2,operator)=> {
     }
 }
 
-let result = calculator (input1,input2,operation);
+let result = calculator (2,5,"+");
 console.log(result);
