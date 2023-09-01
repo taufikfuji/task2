@@ -21,3 +21,12 @@ console.log(result);
 
 let konversiCelsiusKeFahrenheit = (celcius) => fahrenhiet = (celcius * 9/5) + 32;
 console.log(konversiCelsiusKeFahrenheit(25));
+
+konversiCelsiusKeFahrenheit = (celsius) => {
+    return function (x){
+        return fahrenhiet = (celsius * 9/5) + 32;
+    };
+};
+
+let result = konversiCelsiusKeFahrenheit(15);
+console.log(result(25));
